@@ -1,0 +1,57 @@
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Font */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar blur */
+.navbar-blur {
+  background: rgba(30, 64, 175, 0.25);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Section offset */
+section {
+  scroll-margin-top: 80px;
+}
+
+/* Product cards */
+.product-card {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(12px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* Service cards */
+.service-card {
+  background: linear-gradient(to bottom right, #eff6ff, #dbeafe);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* Hover animation */
+button:hover, a:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Mobile tweaks */
+@media (max-width: 640px) {
+  h1 {
+    font-size: 2rem;
+  }
+}

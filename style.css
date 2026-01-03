@@ -80,22 +80,13 @@ button:hover, a:hover {
   nav {
     display: none; /* tetap hidden di desktop */
   }
-
-  /* Mobile menu box */
-  .md\:hidden {
+  .mobile-menu {
     display: block;
-  }
-
-  /* Dropdown menu biar full width */
-  .peer-checked\:block {
     width: 100%;
-    right: 0;
     margin-top: 10px;
   }
-
-  .peer-checked\:block a {
-    text-align: center;
-    padding: 12px;
-    font-size: 16px;
+  .mobile-menu a {
+    display: block;
+    margin: 10px 0;
   }
 }

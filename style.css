@@ -55,11 +55,89 @@ button:hover, a:hover {
 }
 
 /* Mobile tweaks */
+/* ===== MEDIA QUERIES ===== */
+
+/* Tablet (max-width: 768px) */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .header .judul {
+        font-size: 24px;
+    }
+
+    .header ul li {
+        margin-right: 30px;
+        font-size: 14px;
+    }
+
+    .hero-slider {
+        height: 250px;
+    }
+
+    .content {
+        padding: 15px;
+    }
+
+    .content h2 {
+        font-size: 22px;
+    }
+
+    figure img {
+        max-width: 300px;
+    }
+}
+
+/* Handphone (max-width: 480px) */
 @media (max-width: 480px) {
-  h1 {
-    font-size: 2rem;
-  }
-  h2 {
-    font-size: 1.5rem;
-  }
+    .container {
+        width: 100%;
+        border: none;
+    }
+
+    .header {
+        padding: 10px;
+    }
+
+    .header .judul {
+        font-size: 20px;
+    }
+
+    .header ul {
+        padding: 0;
+    }
+
+    .header ul li {
+        display: block;   /* navigasi jadi vertikal */
+        margin: 8px 0;
+        text-align: center;
+    }
+
+    .hero-slider {
+        height: 180px;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    .content h2 {
+        font-size: 18px;
+    }
+
+    .content p {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+    figure img {
+        width: 90%;
+        max-width: 250px;
+    }
+
+    .footer {
+        font-size: 11px;
+        padding: 8px;
+    }
 }

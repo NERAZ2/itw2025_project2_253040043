@@ -53,10 +53,3 @@ button:hover, a:hover {
   transform: scale(1.05);
   transition: transform 0.2s ease-in-out;
 }
-
-/* Mobile tweaks */
-@media (max-width: 640px) {
-  h1 {
-    font-size: 2rem;
-  }
-}
